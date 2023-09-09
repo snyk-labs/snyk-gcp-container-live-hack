@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Module 3: Secure the application on Application Modernization with Snyk and GCP</title>
+    <link>/40_secure_application.html</link>
+    <description>Recent content in Module 3: Secure the application on Application Modernization with Snyk and GCP</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/40_secure_application/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Step 6: Monitor your Repo with Snyk</title>
+      <link>/40_secure_application/41_integrate_github.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/40_secure_application/41_integrate_github.html</guid>
+      <description>Integrate Snyk with the Goof GitHub Repo To check for issues in the application&amp;rsquo;s Open Source dependencies, in this example we will use the Snyk GitHub integration to connect Snyk to the application&amp;rsquo;s GitHub Repository.
+Set up GitHub integration Log in to Snyk.io. Sign up if you haven&amp;rsquo;t already. If this is the first time you&amp;rsquo;ve used your Snyk account on the website, you may see a screen like this. If so, go ahead and click the &amp;ldquo;Skip for now&amp;rdquo; link at the top-right corner of the page.</description>
+    </item>
+    
+    <item>
+      <title>Step 7: Exploit a Vulnerable Open Source component</title>
+      <link>/40_secure_application/42_opensource_exploit.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/40_secure_application/42_opensource_exploit.html</guid>
+      <description>Exploiting an RCE vulnerability in the TodoList application. The Goof repo TodoList application includes various exploits to demonstrate the risks of open source vulnerabilities. We&amp;rsquo;ll demonstrate the infamous Log4Shell vulnerability as an example of an extremenly profific open source package with a critical CVE that was relatively easy to exploit and gives malicous actors a remote code execution (RCE) vector of attack.
+Open the website This example is best exploited from your browser so open a tab and navigate to the todolist application&amp;rsquo;s loadbalancer address with /todolist appended to it.</description>
+    </item>
+    
+    <item>
+      <title>Step 8: Fix a vulnerability with a Snyk Pull Request</title>
+      <link>/40_secure_application/43_fix_vulnerabilities.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/40_secure_application/43_fix_vulnerabilities.html</guid>
+      <description>Fix the vulnerability using a Snyk Pull Request Snyk accelerates remediation via Pull Requests to upgrade dependencies to non-vulnerable versions. Back in Snyk, click into the todolist/todolist-web-struts/pom.xml project.
+Now scroll down to see the list of vulnerabilities. For each Vulnerability, Snyk displays:
+The module that introduced it and, in the case of transitive dependencies, its direct dependency, Details on the path and proposed Remediation, as well as the specific vulnerable function.</description>
+    </item>
+    
+    <item>
+      <title>Step 9: Verify the Vulnerability is no longer exploitable.</title>
+      <link>/40_secure_application/44_redeploy_verify_fix.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/40_secure_application/44_redeploy_verify_fix.html</guid>
+      <description>Update your working copy Back in your terminal, pull the latest changes, including the Snyk Fix, to the working environment.
+git pull Re-build the Image Now build and push the container to GAR (make sure you are cd&amp;rsquo;ed into the todolist directory).
+docker build -t $REPO/todolist:latest . docker push $REPO/todolist:latest Re-deploy the Application to GKE After pushing the image to GAR, push it to GKE by scaling the goof deployment with kubectl.</description>
+    </item>
+    
+  </channel>
+</rss>

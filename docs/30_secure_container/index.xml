@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Module 2: Secure the Containers on Application Modernization with Snyk and GCP</title>
+    <link>/30_secure_container.html</link>
+    <description>Recent content in Module 2: Secure the Containers on Application Modernization with Snyk and GCP</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/30_secure_container/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Step 3: Exploit a Container Vulnerability</title>
+      <link>/30_secure_container/31_container_exploit.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/30_secure_container/31_container_exploit.html</guid>
+      <description>Thumbnailer microservice Putting an application into a container does not automatically make it secure. To demonstrate the risks of a vulnerable component introduced by our container base image, we will exploit a vulnerability in the ImageMagick package present in the &amp;ldquo;thumbnailer&amp;rdquo; pod we&amp;rsquo;ve deployed to GKE.
+Thumbnailer is a microservice written in Python that simply takes an uploaded image and returns a 100x100 scaled down thumbnail version. The application leverages the ImageMagick convert utility to do the work.</description>
+    </item>
+    
+    <item>
+      <title>Step 4: Scan the Container Image for Vulnerabilities</title>
+      <link>/30_secure_container/32_image_recommendations.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/30_secure_container/32_image_recommendations.html</guid>
+      <description>Scan the Container Image for Vulnerabilities Vulnerable components like the version of ImageMagick present in our container image can be identified by Snyk. Developers using the Snyk CLI can run snyk container test to scan containers to get vulnerability information and base image upgrade guidance.
+Scan the image by running the following command (assuming you are cd&amp;rsquo;ed to the thumbnailer directory of your goof repo).
+snyk container test $REPO/thumbnailer:latest --file=Dockerfile --exclude-app-vulns When the scan completes, review the list of vulnerabilities.</description>
+    </item>
+    
+    <item>
+      <title>Step 5: Re-deploy the Application to test the fix</title>
+      <link>/30_secure_container/34_redeploy_test.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/30_secure_container/34_redeploy_test.html</guid>
+      <description>With our image rebuilt, let&amp;rsquo;s push it up to ECR and redeploy the more secure build of the application
+Push to Google Artifact Registry docker push $REPO/thumbnailer:latest Re-deploy the Application to GKE Now that the newer image is in the repo, deploy it to GKE by scaling the goof deployment with kubectl. The deployment&amp;rsquo;s ImagePullPolicy forces GKE to pull the latest image from the registry.
+kubectl scale deployment thumbnailer --replicas=0 kubectl scale deployment thumbnailer --replicas=1 Wait for the pod to start&amp;hellip; Check for the pod to return to &amp;ldquo;Running&amp;rdquo; state with kubectl get pod</description>
+    </item>
+    
+  </channel>
+</rss>
