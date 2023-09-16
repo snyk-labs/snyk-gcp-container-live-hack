@@ -33,7 +33,7 @@ snyk container test $REPO/thumbnailer:latest --file=Dockerfile --exclude-app-vul
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/30_secure_container/34_redeploy_test.html</guid>
-      <description>With our image rebuilt, let&amp;rsquo;s push it up to ECR and redeploy the more secure build of the application
+      <description>With our image rebuilt, let&amp;rsquo;s push it up to GAR and redeploy the more secure build of the application
 Push to Google Artifact Registry docker push $REPO/thumbnailer:latest Re-deploy the Application to GKE Now that the newer image is in the repo, deploy it to GKE by scaling the goof deployment with kubectl. The deployment&amp;rsquo;s ImagePullPolicy forces GKE to pull the latest image from the registry.
 kubectl scale deployment thumbnailer --replicas=0 kubectl scale deployment thumbnailer --replicas=1 Wait for the pod to start&amp;hellip; Check for the pod to return to &amp;ldquo;Running&amp;rdquo; state with kubectl get pod</description>
     </item>
