@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Module 1: Build the Goof applications on Application Modernization with Snyk and GCP</title>
-    <link>/20_build_deploy_goof.html</link>
+    <link>https://snyk-labs.github.io/snyk-gcp-container-live-hack/20_build_deploy_goof.html</link>
     <description>Recent content in Module 1: Build the Goof applications on Application Modernization with Snyk and GCP</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/20_build_deploy_goof/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://snyk-labs.github.io/snyk-gcp-container-live-hack/20_build_deploy_goof/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Step 1: Build the Goof container image</title>
-      <link>/20_build_deploy_goof/21_build_goof_images.html</link>
+      <link>https://snyk-labs.github.io/snyk-gcp-container-live-hack/20_build_deploy_goof/21_build_goof_images.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/20_build_deploy_goof/21_build_goof_images.html</guid>
+      <guid>https://snyk-labs.github.io/snyk-gcp-container-live-hack/20_build_deploy_goof/21_build_goof_images.html</guid>
       <description>Now that you&amp;rsquo;ve cloned the repo to your working environment, we&amp;rsquo;ll build a few container images that run our application examples in Google Kubernetes Engine (GKE) but before we can do anything, we need to create an Google Artifact Registry (GAR) repository to house the build images so GKE has somewhere to pull them from.
 Create the repository The following command will create a repository for the images we will be building:</description>
     </item>
     
     <item>
       <title>Step 2: Deploy the application to GKE</title>
-      <link>/20_build_deploy_goof/22_gke_deploy.html</link>
+      <link>https://snyk-labs.github.io/snyk-gcp-container-live-hack/20_build_deploy_goof/22_gke_deploy.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/20_build_deploy_goof/22_gke_deploy.html</guid>
+      <guid>https://snyk-labs.github.io/snyk-gcp-container-live-hack/20_build_deploy_goof/22_gke_deploy.html</guid>
       <description>For this workshop we created a GKE cluster where we run the Goof apps and you are now going to deploy the applications we build into it.
 Create and set context to a namespace We will be running these applications in a specific namespace.
 # Create a namespace kubectl create ns snyk-gke # Set the current context to use the new namespace kubectl config set-context --current --namespace snyk-gke Deploy the applications Ensure the REPO variable is still set from the build step and run this command.</description>

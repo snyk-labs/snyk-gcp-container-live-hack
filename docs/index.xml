@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Container Modernization with Snyk on Application Modernization with Snyk and GCP</title>
-    <link>/</link>
+    <link>https://snyk-labs.github.io/snyk-gcp-container-live-hack/</link>
     <description>Recent content in Container Modernization with Snyk on Application Modernization with Snyk and GCP</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://snyk-labs.github.io/snyk-gcp-container-live-hack/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Set up initial GCP and tools</title>
-      <link>/10_prerequisites/11_create_gcp_project.html</link>
+      <link>https://snyk-labs.github.io/snyk-gcp-container-live-hack/10_prerequisites/11_create_gcp_project.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/10_prerequisites/11_create_gcp_project.html</guid>
+      <guid>https://snyk-labs.github.io/snyk-gcp-container-live-hack/10_prerequisites/11_create_gcp_project.html</guid>
       <description>Create a Google Cloud Platform (GCP) Account and Project Account creation (skip if you have a GCP account)
 Open https://cloud.google.com in your browser.
 If don&amp;rsquo;t already have a GCP account, click the &amp;ldquo;Start Free&amp;rdquo; button at the top-right and follow the prompts to create or log into your Google user account.
@@ -20,10 +20,10 @@ You can create an account with $300 of free Google Cloud credits good for 90 day
     
     <item>
       <title>Deploy a GKE cluster</title>
-      <link>/10_prerequisites/12_deploy_gke_cluster.html</link>
+      <link>https://snyk-labs.github.io/snyk-gcp-container-live-hack/10_prerequisites/12_deploy_gke_cluster.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/10_prerequisites/12_deploy_gke_cluster.html</guid>
+      <guid>https://snyk-labs.github.io/snyk-gcp-container-live-hack/10_prerequisites/12_deploy_gke_cluster.html</guid>
       <description>Now that you have all of the tools installed, let&amp;rsquo;s deploy a GKE Autopilot cluster so we have a platform to deploy our applications to. CLI Invocation Perhaps the easiest way to setup a GKE cluster is to run the command as shown below in your local terminal: gcloud container clusters create-auto snyk-cluster
 You should get output that looks something like the following:
 $ gcloud container clusters create-auto snyk-cluster Creating cluster snyk-cluster in us-south1.</description>
@@ -31,10 +31,10 @@ $ gcloud container clusters create-auto snyk-cluster Creating cluster snyk-clust
     
     <item>
       <title>Clone the sample application repo</title>
-      <link>/10_prerequisites/16_clone_goof_repo.html</link>
+      <link>https://snyk-labs.github.io/snyk-gcp-container-live-hack/10_prerequisites/16_clone_goof_repo.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/10_prerequisites/16_clone_goof_repo.html</guid>
+      <guid>https://snyk-labs.github.io/snyk-gcp-container-live-hack/10_prerequisites/16_clone_goof_repo.html</guid>
       <description>Create your copy of the repo A sample application, called Goof, is provided for this workshop as a GitHub template. Navigate to the GitHub Repo for the Goof application and click &amp;ldquo;Use this Template&amp;rdquo; and then &amp;ldquo;Create a new repository&amp;rdquo; to create a copy of the Repo to your personal GitHub account.
 Be sure to name the new Repo goof otherwise things will break later on.
 We recommend you make your copy have &amp;ldquo;public&amp;rdquo; visibility, it will simplify working with it during this workshop.</description>
@@ -42,10 +42,10 @@ We recommend you make your copy have &amp;ldquo;public&amp;rdquo; visibility, it
     
     <item>
       <title>Snyk CLI</title>
-      <link>/10_prerequisites/17_snyksetup.html</link>
+      <link>https://snyk-labs.github.io/snyk-gcp-container-live-hack/10_prerequisites/17_snyksetup.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/10_prerequisites/17_snyksetup.html</guid>
+      <guid>https://snyk-labs.github.io/snyk-gcp-container-live-hack/10_prerequisites/17_snyksetup.html</guid>
       <description>Snyk Setup Instructions You will need a Snyk account to run scans. Snyk is available for free and all you need is a valid email address to register. Once you register, you can perform scans and view results locally or on the website.
 Setting up your Snyk Account Create or Login to Snyk account Login or Create a free account here.
 Create Snyk Access Token Visit your Snyk account (Account Settings &amp;gt; API Token section) (https://app.</description>
@@ -53,20 +53,20 @@ Create Snyk Access Token Visit your Snyk account (Account Settings &amp;gt; API 
     
     <item>
       <title>Step 1: Build the Goof container image</title>
-      <link>/20_build_deploy_goof/21_build_goof_images.html</link>
+      <link>https://snyk-labs.github.io/snyk-gcp-container-live-hack/20_build_deploy_goof/21_build_goof_images.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/20_build_deploy_goof/21_build_goof_images.html</guid>
+      <guid>https://snyk-labs.github.io/snyk-gcp-container-live-hack/20_build_deploy_goof/21_build_goof_images.html</guid>
       <description>Now that you&amp;rsquo;ve cloned the repo to your working environment, we&amp;rsquo;ll build a few container images that run our application examples in Google Kubernetes Engine (GKE) but before we can do anything, we need to create an Google Artifact Registry (GAR) repository to house the build images so GKE has somewhere to pull them from.
 Create the repository The following command will create a repository for the images we will be building:</description>
     </item>
     
     <item>
       <title>Step 2: Deploy the application to GKE</title>
-      <link>/20_build_deploy_goof/22_gke_deploy.html</link>
+      <link>https://snyk-labs.github.io/snyk-gcp-container-live-hack/20_build_deploy_goof/22_gke_deploy.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/20_build_deploy_goof/22_gke_deploy.html</guid>
+      <guid>https://snyk-labs.github.io/snyk-gcp-container-live-hack/20_build_deploy_goof/22_gke_deploy.html</guid>
       <description>For this workshop we created a GKE cluster where we run the Goof apps and you are now going to deploy the applications we build into it.
 Create and set context to a namespace We will be running these applications in a specific namespace.
 # Create a namespace kubectl create ns snyk-gke # Set the current context to use the new namespace kubectl config set-context --current --namespace snyk-gke Deploy the applications Ensure the REPO variable is still set from the build step and run this command.</description>
@@ -74,20 +74,20 @@ Create and set context to a namespace We will be running these applications in a
     
     <item>
       <title>Step 3: Exploit a Container Vulnerability</title>
-      <link>/30_secure_container/31_container_exploit.html</link>
+      <link>https://snyk-labs.github.io/snyk-gcp-container-live-hack/30_secure_container/31_container_exploit.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/30_secure_container/31_container_exploit.html</guid>
+      <guid>https://snyk-labs.github.io/snyk-gcp-container-live-hack/30_secure_container/31_container_exploit.html</guid>
       <description>Thumbnailer microservice Putting an application into a container does not automatically make it secure. To demonstrate the risks of a vulnerable component introduced by our container base image, we will exploit a vulnerability in the ImageMagick package present in the &amp;ldquo;thumbnailer&amp;rdquo; pod we&amp;rsquo;ve deployed to GKE.
 Thumbnailer is a microservice written in Python that simply takes an uploaded image and returns a 100x100 scaled down thumbnail version. The application leverages the ImageMagick convert utility to do the work.</description>
     </item>
     
     <item>
       <title>Step 4: Scan the Container Image for Vulnerabilities</title>
-      <link>/30_secure_container/32_image_recommendations.html</link>
+      <link>https://snyk-labs.github.io/snyk-gcp-container-live-hack/30_secure_container/32_image_recommendations.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/30_secure_container/32_image_recommendations.html</guid>
+      <guid>https://snyk-labs.github.io/snyk-gcp-container-live-hack/30_secure_container/32_image_recommendations.html</guid>
       <description>Scan the Container Image for Vulnerabilities Vulnerable components like the version of ImageMagick present in our container image can be identified by Snyk. Developers using the Snyk CLI can run snyk container test to scan containers to get vulnerability information and base image upgrade guidance.
 Scan the image by running the following command (assuming you are cd&amp;rsquo;ed to the thumbnailer directory of your goof repo).
 snyk container test $REPO/thumbnailer:latest --file=Dockerfile --exclude-app-vulns When the scan completes, review the list of vulnerabilities.</description>
@@ -95,10 +95,10 @@ snyk container test $REPO/thumbnailer:latest --file=Dockerfile --exclude-app-vul
     
     <item>
       <title>Step 5: Re-deploy the Application to test the fix</title>
-      <link>/30_secure_container/34_redeploy_test.html</link>
+      <link>https://snyk-labs.github.io/snyk-gcp-container-live-hack/30_secure_container/34_redeploy_test.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/30_secure_container/34_redeploy_test.html</guid>
+      <guid>https://snyk-labs.github.io/snyk-gcp-container-live-hack/30_secure_container/34_redeploy_test.html</guid>
       <description>With our image rebuilt, let&amp;rsquo;s push it up to GAR and redeploy the more secure build of the application
 Push to Google Artifact Registry docker push $REPO/thumbnailer:latest Re-deploy the Application to GKE Now that the newer image is in the repo, deploy it to GKE by scaling the goof deployment with kubectl. The deployment&amp;rsquo;s ImagePullPolicy forces GKE to pull the latest image from the registry.
 kubectl scale deployment thumbnailer --replicas=0 kubectl scale deployment thumbnailer --replicas=1 Wait for the pod to start&amp;hellip; Check for the pod to return to &amp;ldquo;Running&amp;rdquo; state with kubectl get pod</description>
@@ -106,30 +106,30 @@ kubectl scale deployment thumbnailer --replicas=0 kubectl scale deployment thumb
     
     <item>
       <title>Step 6: Monitor your Repo with Snyk</title>
-      <link>/40_secure_application/41_integrate_github.html</link>
+      <link>https://snyk-labs.github.io/snyk-gcp-container-live-hack/40_secure_application/41_integrate_github.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/40_secure_application/41_integrate_github.html</guid>
+      <guid>https://snyk-labs.github.io/snyk-gcp-container-live-hack/40_secure_application/41_integrate_github.html</guid>
       <description>Integrate Snyk with the Goof GitHub Repo To check for issues in the application&amp;rsquo;s Open Source dependencies, in this example we will use the Snyk GitHub integration to connect Snyk to the application&amp;rsquo;s GitHub Repository.
 Set up GitHub integration Log in to Snyk.io. Sign up if you haven&amp;rsquo;t already. If this is the first time you&amp;rsquo;ve used your Snyk account on the website, you may see a screen like this. If so, go ahead and click the &amp;ldquo;Skip for now&amp;rdquo; link at the top-right corner of the page.</description>
     </item>
     
     <item>
       <title>Step 7: Exploit a Vulnerable Open Source component</title>
-      <link>/40_secure_application/42_opensource_exploit.html</link>
+      <link>https://snyk-labs.github.io/snyk-gcp-container-live-hack/40_secure_application/42_opensource_exploit.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/40_secure_application/42_opensource_exploit.html</guid>
+      <guid>https://snyk-labs.github.io/snyk-gcp-container-live-hack/40_secure_application/42_opensource_exploit.html</guid>
       <description>Exploiting an RCE vulnerability in the TodoList application. The Goof repo TodoList application includes various exploits to demonstrate the risks of open source vulnerabilities. We&amp;rsquo;ll demonstrate the infamous Log4Shell vulnerability as an example of an extremenly profific open source package with a critical CVE that was relatively easy to exploit and gives malicous actors a remote code execution (RCE) vector of attack.
 Open the website This example is best exploited from your browser so open a tab and navigate to the todolist application&amp;rsquo;s loadbalancer address with /todolist appended to it.</description>
     </item>
     
     <item>
       <title>Step 8: Fix a vulnerability with a Snyk Pull Request</title>
-      <link>/40_secure_application/43_fix_vulnerabilities.html</link>
+      <link>https://snyk-labs.github.io/snyk-gcp-container-live-hack/40_secure_application/43_fix_vulnerabilities.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/40_secure_application/43_fix_vulnerabilities.html</guid>
+      <guid>https://snyk-labs.github.io/snyk-gcp-container-live-hack/40_secure_application/43_fix_vulnerabilities.html</guid>
       <description>Fix the vulnerability using a Snyk Pull Request Snyk accelerates remediation via Pull Requests to upgrade dependencies to non-vulnerable versions. Back in Snyk, click into the todolist/todolist-web-struts/pom.xml project.
 Now scroll down to see the list of vulnerabilities. For each Vulnerability, Snyk displays:
 The module that introduced it and, in the case of transitive dependencies, its direct dependency, Details on the path and proposed Remediation, as well as the specific vulnerable function.</description>
@@ -137,10 +137,10 @@ The module that introduced it and, in the case of transitive dependencies, its d
     
     <item>
       <title>Step 9: Verify the Vulnerability is no longer exploitable.</title>
-      <link>/40_secure_application/44_redeploy_verify_fix.html</link>
+      <link>https://snyk-labs.github.io/snyk-gcp-container-live-hack/40_secure_application/44_redeploy_verify_fix.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/40_secure_application/44_redeploy_verify_fix.html</guid>
+      <guid>https://snyk-labs.github.io/snyk-gcp-container-live-hack/40_secure_application/44_redeploy_verify_fix.html</guid>
       <description>Update your working copy Back in your terminal, pull the latest changes, including the Snyk Fix, to the working environment.
 git pull Re-build the Image Now build and push the container to GAR (make sure you are cd&amp;rsquo;ed into the todolist directory).
 docker build -t $REPO/todolist:latest . docker push $REPO/todolist:latest Re-deploy the Application to GKE After pushing the image to GAR, push it to GKE by scaling the goof deployment with kubectl.</description>
@@ -148,10 +148,10 @@ docker build -t $REPO/todolist:latest . docker push $REPO/todolist:latest Re-dep
     
     <item>
       <title>Recap</title>
-      <link>/90_conclusion/91_recap.html</link>
+      <link>https://snyk-labs.github.io/snyk-gcp-container-live-hack/90_conclusion/91_recap.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/90_conclusion/91_recap.html</guid>
+      <guid>https://snyk-labs.github.io/snyk-gcp-container-live-hack/90_conclusion/91_recap.html</guid>
       <description>Well Done 🎉 Congratulations! 🎉 You have completed today&amp;rsquo;s worshop on migrating and modernizing with Snyk and GCP!
 Recap on what you have learned Today we&amp;rsquo;ve learned:
 The kinds of invisible risks present in seemingly innocent applications How to scan container images for Base Image vulnerabilities using the Snyk CLI Identifying and fixing Application Vulnerabilities using Snyk Final Thoughts We hope you have seen some of the wins your organization can have while using Snyk.</description>
@@ -159,10 +159,10 @@ The kinds of invisible risks present in seemingly innocent applications How to s
     
     <item>
       <title>Cleanup</title>
-      <link>/90_conclusion/92_cleanup.html</link>
+      <link>https://snyk-labs.github.io/snyk-gcp-container-live-hack/90_conclusion/92_cleanup.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/90_conclusion/92_cleanup.html</guid>
+      <guid>https://snyk-labs.github.io/snyk-gcp-container-live-hack/90_conclusion/92_cleanup.html</guid>
       <description>Cleanup In order to prevent charges to your account we recommend cleaning up the infrastructure that was created. If you plan to keep things running so you can examine the workshop a bit more please remember to do the cleanup when you are done. It is very easy to leave things running in an GCP account, forget about it, and then accrue charges.
 Assuming you set the GCP_PROJECT variable with the project name you created via gcloud init, tear down can be done by simply running gcloud projects delete $GCP_PROJECT.</description>
     </item>

@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Conclusion on Application Modernization with Snyk and GCP</title>
-    <link>/90_conclusion.html</link>
+    <link>https://snyk-labs.github.io/snyk-gcp-container-live-hack/90_conclusion.html</link>
     <description>Recent content in Conclusion on Application Modernization with Snyk and GCP</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/90_conclusion/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://snyk-labs.github.io/snyk-gcp-container-live-hack/90_conclusion/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Recap</title>
-      <link>/90_conclusion/91_recap.html</link>
+      <link>https://snyk-labs.github.io/snyk-gcp-container-live-hack/90_conclusion/91_recap.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/90_conclusion/91_recap.html</guid>
+      <guid>https://snyk-labs.github.io/snyk-gcp-container-live-hack/90_conclusion/91_recap.html</guid>
       <description>Well Done 🎉 Congratulations! 🎉 You have completed today&amp;rsquo;s worshop on migrating and modernizing with Snyk and GCP!
 Recap on what you have learned Today we&amp;rsquo;ve learned:
 The kinds of invisible risks present in seemingly innocent applications How to scan container images for Base Image vulnerabilities using the Snyk CLI Identifying and fixing Application Vulnerabilities using Snyk Final Thoughts We hope you have seen some of the wins your organization can have while using Snyk.</description>
@@ -19,10 +19,10 @@ The kinds of invisible risks present in seemingly innocent applications How to s
     
     <item>
       <title>Cleanup</title>
-      <link>/90_conclusion/92_cleanup.html</link>
+      <link>https://snyk-labs.github.io/snyk-gcp-container-live-hack/90_conclusion/92_cleanup.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/90_conclusion/92_cleanup.html</guid>
+      <guid>https://snyk-labs.github.io/snyk-gcp-container-live-hack/90_conclusion/92_cleanup.html</guid>
       <description>Cleanup In order to prevent charges to your account we recommend cleaning up the infrastructure that was created. If you plan to keep things running so you can examine the workshop a bit more please remember to do the cleanup when you are done. It is very easy to leave things running in an GCP account, forget about it, and then accrue charges.
 Assuming you set the GCP_PROJECT variable with the project name you created via gcloud init, tear down can be done by simply running gcloud projects delete $GCP_PROJECT.</description>
     </item>

@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Prerequisites on Application Modernization with Snyk and GCP</title>
-    <link>/10_prerequisites.html</link>
+    <link>https://snyk-labs.github.io/snyk-gcp-container-live-hack/10_prerequisites.html</link>
     <description>Recent content in Prerequisites on Application Modernization with Snyk and GCP</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/10_prerequisites/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://snyk-labs.github.io/snyk-gcp-container-live-hack/10_prerequisites/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Set up initial GCP and tools</title>
-      <link>/10_prerequisites/11_create_gcp_project.html</link>
+      <link>https://snyk-labs.github.io/snyk-gcp-container-live-hack/10_prerequisites/11_create_gcp_project.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/10_prerequisites/11_create_gcp_project.html</guid>
+      <guid>https://snyk-labs.github.io/snyk-gcp-container-live-hack/10_prerequisites/11_create_gcp_project.html</guid>
       <description>Create a Google Cloud Platform (GCP) Account and Project Account creation (skip if you have a GCP account)
 Open https://cloud.google.com in your browser.
 If don&amp;rsquo;t already have a GCP account, click the &amp;ldquo;Start Free&amp;rdquo; button at the top-right and follow the prompts to create or log into your Google user account.
@@ -20,10 +20,10 @@ You can create an account with $300 of free Google Cloud credits good for 90 day
     
     <item>
       <title>Deploy a GKE cluster</title>
-      <link>/10_prerequisites/12_deploy_gke_cluster.html</link>
+      <link>https://snyk-labs.github.io/snyk-gcp-container-live-hack/10_prerequisites/12_deploy_gke_cluster.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/10_prerequisites/12_deploy_gke_cluster.html</guid>
+      <guid>https://snyk-labs.github.io/snyk-gcp-container-live-hack/10_prerequisites/12_deploy_gke_cluster.html</guid>
       <description>Now that you have all of the tools installed, let&amp;rsquo;s deploy a GKE Autopilot cluster so we have a platform to deploy our applications to. CLI Invocation Perhaps the easiest way to setup a GKE cluster is to run the command as shown below in your local terminal: gcloud container clusters create-auto snyk-cluster
 You should get output that looks something like the following:
 $ gcloud container clusters create-auto snyk-cluster Creating cluster snyk-cluster in us-south1.</description>
@@ -31,10 +31,10 @@ $ gcloud container clusters create-auto snyk-cluster Creating cluster snyk-clust
     
     <item>
       <title>Clone the sample application repo</title>
-      <link>/10_prerequisites/16_clone_goof_repo.html</link>
+      <link>https://snyk-labs.github.io/snyk-gcp-container-live-hack/10_prerequisites/16_clone_goof_repo.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/10_prerequisites/16_clone_goof_repo.html</guid>
+      <guid>https://snyk-labs.github.io/snyk-gcp-container-live-hack/10_prerequisites/16_clone_goof_repo.html</guid>
       <description>Create your copy of the repo A sample application, called Goof, is provided for this workshop as a GitHub template. Navigate to the GitHub Repo for the Goof application and click &amp;ldquo;Use this Template&amp;rdquo; and then &amp;ldquo;Create a new repository&amp;rdquo; to create a copy of the Repo to your personal GitHub account.
 Be sure to name the new Repo goof otherwise things will break later on.
 We recommend you make your copy have &amp;ldquo;public&amp;rdquo; visibility, it will simplify working with it during this workshop.</description>
@@ -42,10 +42,10 @@ We recommend you make your copy have &amp;ldquo;public&amp;rdquo; visibility, it
     
     <item>
       <title>Snyk CLI</title>
-      <link>/10_prerequisites/17_snyksetup.html</link>
+      <link>https://snyk-labs.github.io/snyk-gcp-container-live-hack/10_prerequisites/17_snyksetup.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/10_prerequisites/17_snyksetup.html</guid>
+      <guid>https://snyk-labs.github.io/snyk-gcp-container-live-hack/10_prerequisites/17_snyksetup.html</guid>
       <description>Snyk Setup Instructions You will need a Snyk account to run scans. Snyk is available for free and all you need is a valid email address to register. Once you register, you can perform scans and view results locally or on the website.
 Setting up your Snyk Account Create or Login to Snyk account Login or Create a free account here.
 Create Snyk Access Token Visit your Snyk account (Account Settings &amp;gt; API Token section) (https://app.</description>
