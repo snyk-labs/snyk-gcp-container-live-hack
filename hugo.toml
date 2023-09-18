@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://snyk-labs.github.io/snyk-gcp-container-live-hack/"
 languageCode = 'en-us'
 title = 'Application Modernization with Snyk and GCP'
 theme = "hugo-theme-learn"
