@@ -1,4 +1,5 @@
 baseURL = "https://snyk-labs.github.io/snyk-gcp-container-live-hack/"
+canonifyurls = true
 languageCode = 'en-us'
 title = 'Application Modernization with Snyk and GCP'
 theme = "hugo-theme-learn"
