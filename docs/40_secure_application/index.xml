@@ -45,7 +45,7 @@ The module that introduced it and, in the case of transitive dependencies, its d
       <guid>https://snyk-labs.github.io/snyk-gcp-container-live-hack/40_secure_application/44_redeploy_verify_fix.html</guid>
       <description>Update your working copy Back in your terminal, pull the latest changes, including the Snyk Fix, to the working environment.
 git pull Re-build the Image Now build and push the container to GAR (make sure you are cd&amp;rsquo;ed into the todolist directory).
-docker build -t $REPO/todolist:latest . docker push $REPO/todolist:latest Re-deploy the Application to GKE After pushing the image to GAR, push it to GKE by scaling the goof deployment with kubectl.</description>
+As mentioned earlier, the following command includes --platform=linux/amd64 to ensure the correct CPU architecture is used for your GKE cluster. This is nessesary if your local workstation is not Intel/AMD based, i.</description>
     </item>
     
   </channel>

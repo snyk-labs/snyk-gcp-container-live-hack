@@ -12,20 +12,20 @@
     <title>Set up initial GCP and tools - Application Modernization with Snyk and GCP</title>
 
     
-    <link href="https://snyk-labs.github.io/snyk-gcp-container-live-hack/css/nucleus.css?1695227568" rel="stylesheet">
-    <link href="https://snyk-labs.github.io/snyk-gcp-container-live-hack/css/fontawesome-all.min.css?1695227568" rel="stylesheet">
-    <link href="https://snyk-labs.github.io/snyk-gcp-container-live-hack/css/hybrid.css?1695227568" rel="stylesheet">
-    <link href="https://snyk-labs.github.io/snyk-gcp-container-live-hack/css/featherlight.min.css?1695227568" rel="stylesheet">
-    <link href="https://snyk-labs.github.io/snyk-gcp-container-live-hack/css/perfect-scrollbar.min.css?1695227568" rel="stylesheet">
-    <link href="https://snyk-labs.github.io/snyk-gcp-container-live-hack/css/auto-complete.css?1695227568" rel="stylesheet">
-    <link href="https://snyk-labs.github.io/snyk-gcp-container-live-hack/css/atom-one-dark-reasonable.css?1695227568" rel="stylesheet">
-    <link href="https://snyk-labs.github.io/snyk-gcp-container-live-hack/css/theme.css?1695227568" rel="stylesheet">
-    <link href="https://snyk-labs.github.io/snyk-gcp-container-live-hack/css/tabs.css?1695227568" rel="stylesheet">
-    <link href="https://snyk-labs.github.io/snyk-gcp-container-live-hack/css/hugo-theme.css?1695227568" rel="stylesheet">
+    <link href="https://snyk-labs.github.io/snyk-gcp-container-live-hack/css/nucleus.css?1695240074" rel="stylesheet">
+    <link href="https://snyk-labs.github.io/snyk-gcp-container-live-hack/css/fontawesome-all.min.css?1695240074" rel="stylesheet">
+    <link href="https://snyk-labs.github.io/snyk-gcp-container-live-hack/css/hybrid.css?1695240074" rel="stylesheet">
+    <link href="https://snyk-labs.github.io/snyk-gcp-container-live-hack/css/featherlight.min.css?1695240074" rel="stylesheet">
+    <link href="https://snyk-labs.github.io/snyk-gcp-container-live-hack/css/perfect-scrollbar.min.css?1695240074" rel="stylesheet">
+    <link href="https://snyk-labs.github.io/snyk-gcp-container-live-hack/css/auto-complete.css?1695240074" rel="stylesheet">
+    <link href="https://snyk-labs.github.io/snyk-gcp-container-live-hack/css/atom-one-dark-reasonable.css?1695240074" rel="stylesheet">
+    <link href="https://snyk-labs.github.io/snyk-gcp-container-live-hack/css/theme.css?1695240074" rel="stylesheet">
+    <link href="https://snyk-labs.github.io/snyk-gcp-container-live-hack/css/tabs.css?1695240074" rel="stylesheet">
+    <link href="https://snyk-labs.github.io/snyk-gcp-container-live-hack/css/hugo-theme.css?1695240074" rel="stylesheet">
     
     
 
-    <script src="https://snyk-labs.github.io/snyk-gcp-container-live-hack/js/jquery-3.3.1.min.js?1695227568"></script>
+    <script src="https://snyk-labs.github.io/snyk-gcp-container-live-hack/js/jquery-3.3.1.min.js?1695240074"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -52,14 +52,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="https://snyk-labs.github.io/snyk-gcp-container-live-hack/js/lunr.min.js?1695227568"></script>
-<script type="text/javascript" src="https://snyk-labs.github.io/snyk-gcp-container-live-hack/js/auto-complete.js?1695227568"></script>
+<script type="text/javascript" src="https://snyk-labs.github.io/snyk-gcp-container-live-hack/js/lunr.min.js?1695240074"></script>
+<script type="text/javascript" src="https://snyk-labs.github.io/snyk-gcp-container-live-hack/js/auto-complete.js?1695240074"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/snyk-labs.github.io\/snyk-gcp-container-live-hack\/";
     
 </script>
-<script type="text/javascript" src="https://snyk-labs.github.io/snyk-gcp-container-live-hack/js/search.js?1695227568"></script>
+<script type="text/javascript" src="https://snyk-labs.github.io/snyk-gcp-container-live-hack/js/search.js?1695240074"></script>
 
     
   </div>
@@ -639,6 +639,8 @@
         <li><a href="#kubectl-and-gke-plugin">kubectl and GKE plugin</a></li>
         <li><a href="#git">git</a></li>
         <li><a href="#docker">Docker</a></li>
+        <li><a href="#python-3">Python 3</a></li>
+        <li><a href="#envsubst-gettext">envsubst (gettext)</a></li>
       </ul>
     </li>
   </ul>
@@ -707,6 +709,25 @@ projectId: snyk-devrel-workshop
 <p>You&rsquo;ll need git to clone the repository for this workshop. Most reading this will probably already have it installed but just in case you don&rsquo;t, see <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">https://git-scm.com/book/en/v2/Getting-Started-Installing-Git</a> for official instructions.</p>
 <h3 id="docker">Docker</h3>
 <p>This workshop assumes you have a Docker (or compatible) runtime available to build and push container images. Docker Desktop or simply the <code>docker</code> cli tool are common choices for this, see <a href="https://docker.com">https://docker.com</a> for install details.</p>
+<h3 id="python-3">Python 3</h3>
+<p>At least one of the modules assumes you have <a href="https://www.python.org">Python 3</a> available on your workstation to run a helper script</p>
+<h3 id="envsubst-gettext">envsubst (gettext)</h3>
+<p>If you do not already have <a href="https://www.gnu.org/software/gettext/manual/gettext.html#envsubst-Invocation">envsubst</a> installed as part of the GNU <a href="https://www.gnu.org/software/gettext/">gettext</a> package, (most Linux distros include it), you will need it for at least one step in this workshop.</p>
+<ul>
+<li>MacOS: <code>brew install gettext</code> (assuming you have <a href="https://brew.sh/">Homebrew</a> installed)</li>
+<li>Debian/Ubuntu/Raspbian: <code>apt-get install gettext-base</code></li>
+<li>Alpine: <code>apk add gettext</code></li>
+<li>Arch: <code>pacman -S gettext</code></li>
+<li>CentOS: <code>yum install gettext</code></li>
+<li>Fedora: <code>dnf install gettext</code></li>
+</ul>
+<h4 id="an-envsubst-alternative">An envsubst alternative</h4>
+<p>If you are unable to install gettext via one of these means, you can also declare this one-line python script in your shell to emulate it:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>envsubst<span style="color:#f92672">()</span> <span style="color:#f92672">{</span> python3 -c <span style="color:#e6db74">&#39;import os,sys;[sys.stdout.write(os.path.expandvars(l)) for l in sys.stdin]&#39;</span>; <span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>You can test this is working with a simple shell command like <code>export MYNAME=Patch; echo 'My name is $MYNAME' | envsubst</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>export MYNAME<span style="color:#f92672">=</span>Patch; echo <span style="color:#e6db74">&#39;My name is $MYNAME&#39;</span> | envsubst
+</span></span><span style="display:flex;"><span>My name is Patch
+</span></span></code></pre></div><p>Remember, though, if you switch to a new shell, you&rsquo;ll need to re-declair that function in the new one.</p>
 
 
 <footer class="footline">
@@ -1097,16 +1118,16 @@ projectId: snyk-devrel-workshop
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="https://snyk-labs.github.io/snyk-gcp-container-live-hack/js/clipboard.min.js?1695227568"></script>
-    <script src="https://snyk-labs.github.io/snyk-gcp-container-live-hack/js/perfect-scrollbar.min.js?1695227568"></script>
-    <script src="https://snyk-labs.github.io/snyk-gcp-container-live-hack/js/perfect-scrollbar.jquery.min.js?1695227568"></script>
-    <script src="https://snyk-labs.github.io/snyk-gcp-container-live-hack/js/jquery.sticky.js?1695227568"></script>
-    <script src="https://snyk-labs.github.io/snyk-gcp-container-live-hack/js/featherlight.min.js?1695227568"></script>
-    <script src="https://snyk-labs.github.io/snyk-gcp-container-live-hack/js/highlight.pack.js?1695227568"></script>
+    <script src="https://snyk-labs.github.io/snyk-gcp-container-live-hack/js/clipboard.min.js?1695240074"></script>
+    <script src="https://snyk-labs.github.io/snyk-gcp-container-live-hack/js/perfect-scrollbar.min.js?1695240074"></script>
+    <script src="https://snyk-labs.github.io/snyk-gcp-container-live-hack/js/perfect-scrollbar.jquery.min.js?1695240074"></script>
+    <script src="https://snyk-labs.github.io/snyk-gcp-container-live-hack/js/jquery.sticky.js?1695240074"></script>
+    <script src="https://snyk-labs.github.io/snyk-gcp-container-live-hack/js/featherlight.min.js?1695240074"></script>
+    <script src="https://snyk-labs.github.io/snyk-gcp-container-live-hack/js/highlight.pack.js?1695240074"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="https://snyk-labs.github.io/snyk-gcp-container-live-hack/js/modernizr.custom-3.6.0.js?1695227568"></script>
-    <script src="https://snyk-labs.github.io/snyk-gcp-container-live-hack/js/learn.js?1695227568"></script>
-    <script src="https://snyk-labs.github.io/snyk-gcp-container-live-hack/js/hugo-learn.js?1695227568"></script>
+    <script src="https://snyk-labs.github.io/snyk-gcp-container-live-hack/js/modernizr.custom-3.6.0.js?1695240074"></script>
+    <script src="https://snyk-labs.github.io/snyk-gcp-container-live-hack/js/learn.js?1695240074"></script>
+    <script src="https://snyk-labs.github.io/snyk-gcp-container-live-hack/js/hugo-learn.js?1695240074"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>
