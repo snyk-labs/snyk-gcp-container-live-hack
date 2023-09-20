@@ -15,8 +15,12 @@ git pull
 ## Re-build the Image
 Now build and push the container to GAR (make sure you are cd'ed into the todolist directory).
 
+{{% notice info %}}
+As mentioned earlier, the following command includes `--platform=linux/amd64` to ensure the correct CPU architecture is used for your GKE cluster. This is nessesary if your local workstation is not Intel/AMD based, i.e. Apple Silicon or Raspberry Pi.  If you are on an Intel/AMD based workstation, you may omit that portion if you like. 
+{{% /notice %}}
+
 ```sh
-docker build -t $REPO/todolist:latest .
+docker build -t $REPO/todolist:latest --platform=linux/amd64 todolist
 docker push $REPO/todolist:latest
 ```
 

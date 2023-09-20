@@ -42,7 +42,7 @@ The following commands include `--platform=linux/amd64` to ensure the correct CP
 ```sh
 docker build -t $REPO/thumbnailer:latest --platform=linux/amd64 thumbnailer
 
-docker build -t $REPO/todolist:latest --platform=linux/amd64  todolist
+docker build -t $REPO/todolist:latest --platform=linux/amd64 todolist
 
 docker build -t $REPO/log4shell-server:latest --platform=linux/amd64 todolist/exploits/log4shell-server
 
