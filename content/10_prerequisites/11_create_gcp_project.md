@@ -79,3 +79,27 @@ You'll need git to clone the repository for this workshop. Most reading this wil
 ### Docker
 This workshop assumes you have a Docker (or compatible) runtime available to build and push container images. Docker Desktop or simply the `docker` cli tool are common choices for this, see https://docker.com for install details.
 
+### Python 3
+At least one of the modules assumes you have [Python 3](https://www.python.org) available on your workstation to run a helper script
+
+### envsubst (gettext)
+If you do not already have [envsubst](https://www.gnu.org/software/gettext/manual/gettext.html#envsubst-Invocation) installed as part of the GNU [gettext](https://www.gnu.org/software/gettext/) package, (most Linux distros include it), you will need it for at least one step in this workshop.
+* MacOS: `brew install gettext` (assuming you have [Homebrew](https://brew.sh/) installed)
+* Debian/Ubuntu/Raspbian: `apt-get install gettext-base`
+* Alpine: `apk add gettext`
+* Arch: `pacman -S gettext`
+* CentOS: `yum install gettext`
+* Fedora: `dnf install gettext`
+
+#### An envsubst alternative
+If you are unable to install gettext via one of these means, you can also declare this one-line python script in your shell to emulate it:
+```shell
+envsubst() { python3 -c 'import os,sys;[sys.stdout.write(os.path.expandvars(l)) for l in sys.stdin]'; }
+```
+
+You can test this is working with a simple shell command like `export MYNAME=Patch; echo 'My name is $MYNAME' | envsubst`
+```shell
+export MYNAME=Patch; echo 'My name is $MYNAME' | envsubst
+My name is Patch
+```
+Remember, though, if you switch to a new shell, you'll need to re-declair that function in the new one.
