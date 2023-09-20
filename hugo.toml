@@ -20,7 +20,7 @@ enableEmoji = true
   # Description of the site, will be used in meta information
   description = ""
   # Shows a checkmark for visited pages on the menu
-  showVisitedLinks = true
+  showVisitedLinks = false
   # Disable search function. It will hide search bar
   disableSearch = false
   # Javascript and CSS cache are automatically busted when new version of site is generated.
@@ -48,7 +48,7 @@ enableEmoji = true
   # Change default color scheme with a variant one. Can be "red", "blue", "green".
   themeVariant = ""
   # Provide a list of custom css files to load relative from the `static/` folder in the site root.
-  custom_css = ["css/foo.css", "css/bar.css"]
+  # custom_css = ["css/foo.css", "css/bar.css"]
   # Change the title separator. Default to "::".
   titleSeparator = "-"
 
